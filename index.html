@@ -1,12 +1,360 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Онлайн магазин "Device"</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header class="page-header page-container">
+  <a class="logo" href="#">
+    <!-- TODO: Заменить на svg для оживления по стайлгайду -->
+    <img src="" alt="Логотип Device">
+  </a>
+  <section class="search">
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="search-catalog-label visually-hidden" for="search-catalog">Поле поиска</label>
+      <input class="search-catalog-field" type="search" id="search-catalog" name="appointment-date"
+             placeholder="Текст поиска">
+      <button class="button search-button" type="submit">Найти</button>
+    </form>
+  </section>
+  <nav class="navigation">
+    <div class="navigation-top">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item ">
+          <a class="navigation-link" href="">Коля Петухов</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Выйти</a></li>
+      </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <!-- TODO: поповер при наведении на корзину -->
+          <a class="navigation-link" href="#">
+            <div class="cart-icon-container">
+              <span class="cart-icon-badge">2</span>
+            </div>
+            <span>Корзина</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <div class="navigation-bottom">
+      <div>
+        <p class="header-catalog">Каталог товаров</p>
+        <button class="button catalog-button" type="submit"></button>
+        <ul class="navigation-catalog">
+          <li>
+            <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a class="navigation-catalog-link" href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a class="navigation-catalog-link" href="#">Умные часы</a>
+          </li>
+          <li>
+            <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-  </body>
+<main class="main-index main-container">
+  <h1 class="visually-hidden">Device - Онлайн магазин электроники.</h1>
+  <section class="page-container slider-container">
+    <h2 class="visually-hidden">Актуальные предложения.</h2>
+    <ol class="slider">
+      <li class="slider-item">
+        <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
+        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-description-container">
+          <span class="slider-number">01</span>
+          <b class="slider-title"></b>
+          <p class="slider-description"></p>
+          <div class="slider-control">
+            <a class="button" href="#">Подробнее</a>
+            <button class="slider-control-button slider-current">
+              <span class="visually-hidden">Переход к слайду 1</span>
+            </button>
+          </div>
+          <dl class="slider-advantage">
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+          </dl>
+        </div>
+      </li>
+      <li class="slider-item">
+        <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
+        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-description-container">
+          <span class="slider-number">02</span>
+          <b class="slider-title"></b>
+          <p class="slider-description"></p>
+          <div class="slider-control">
+            <a class="button" href="#">Подробнее</a>
+            <button class="slider-control-button">
+              <span class="visually-hidden">Переход к слайду 2</span>
+            </button>
+          </div>
+          <dl class="slider-advantage">
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+          </dl>
+        </div>
+      </li>
+      <li class="slider-item">
+        <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
+        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-description-container">
+          <span class="slider-number">03</span>
+          <b class="slider-title"></b>
+          <p class="slider-description"></p>
+          <div class="slider-control">
+            <a class="button" href="#">Подробнее</a>
+            <button class="slider-control-button">
+              <span class="visually-hidden">Переход к слайду 3</span>
+            </button>
+          </div>
+          <dl class="slider-advantage">
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+            <dt class="slider-advantage-title"></dt>
+            <dd class="slider-advantage-value"></dd>
+          </dl>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="page-container catalog-section">
+    <h2 class="visually-hidden">Разделы каталога</h2>
+    <ul>
+      <li>
+        <!--TODO: прописать высоту img -->
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Виртуальная реальность</h3>
+        </a>
+      </li>
+      <li>
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Моноподы для селфи</h3>
+        </a>
+      </li>
+      <li>
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Экшн-камеры</h3>
+        </a>
+      </li>
+      <li>
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Фитнес-браслеты</h3>
+        </a>
+      </li>
+      <li>
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Умные часы</h3>
+        </a>
+      </li>
+      <li>
+        <a class="catalog-card-link" href="#">
+          <img class="catalog-card-image" src="" alt="">
+          <h3 class="catalog-card-title">Квадрокоптеры</h3>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!--TODO: не забыть про уши и серый фон до краев-->
+  <section class="services">
+    <h2 class="visually-hidden">Услуги.</h2>
+    <!-- TODO: сделать вертикальный разделитель  -->
+    <div class="page-container">
+      <div class="service-button-container">
+        <button class="button services-button-current">Доставка</button>
+        <button class="button">Гарантия</button>
+        <button class="button">Кредит</button>
+      </div>
+      <ul class="service-description-container">
+        <li class="service-description service-description-current">
+          <div class="service-description-box">
+            <h3 class="services-title">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <img class="service-description-img" src="" alt="">
+        </li>
+        <li class="service-description">
+          <div class="service-description-box">
+            <h3 class="services-title">Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
+          <img class="service-description-img" src="" alt="">
+        </li>
+        <li class="service-description">
+          <div class="service-description-box">
+            <h3 class="services-title">Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+              кредита. Выгодные для банка, разумеется.</p>
+          </div>
+          <img class="service-description-img" src="" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-container delivery-container">
+    <h2 class="visually-hidden">Специальная доставка.</h2>
+    <a class="button-delivery" href="#">
+      <img class="delivery-container" src="" alt="">
+      Доставим редкий товар под заказ
+      <span class="delivery-icon"></span>
+    </a>
+  </section>
+
+  <section class="page-container about-company">
+    <h2 class="visually-hidden">Информация о компании.</h2>
+    <div class="about-company-box">
+      <h3 class="about-company-title">О нас</h3>
+      <p class="about-company-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
+        нас.</p>
+      <p class="about-company-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+        компаниями:</p>
+      <ul class="delivery-list">
+        <li class="delivery-item"><b>Меловые линии</b></li>
+        <li class="delivery-item"><b>СДИК</b></li>
+        <li class="delivery-item"><b>ТоксБерри</b></li>
+      </ul>
+      <a class="button" href="#">Подробнее о нас</a>
+    </div>
+    <div class="about-company-box">
+      <h3 class="about-company-title">Контакты</h3>
+      <p class="about-company-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+        работоспособность покупки.</p>
+      <b class="about-company-text-header">Интернет-магазин «Девайс»</b>
+      <address class="about-company-address">
+        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="about-company-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <b class="about-company-text-header">Время работы</b>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+      </ul>
+      <a class="button" href="#">Напишите нам</a>
+    </div>
+  </section>
+  <!--TODO: не забыть про уши и серый фон до краев-->
+  <section class="newsletter">
+    <div class="page-container">
+      <div class="newsletter-top">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+          спецпредложения и вот это вот всё.</p>
+      </div>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="newsletter-email"
+               required>
+        <button class="button-medium button-blue" type="submit">Подписаться</button>
+      </form>
+      <!-- TODO: псевдоэлемент галочка -->
+      <p>Это бесплатно</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="page-container">
+    <!-- TODO: Заменить на svg для оживления по стайлгайду -->
+    <div class="footer-logo-container">
+      <img class="footer-logo" src="" alt="">
+      <address class="footer-address">
+        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+      <span></span>
+    </div>
+    <div class="footer-service-container">
+      <ul class="footer-service">
+        <li class="footer-service-item">
+          <a class="footer-service-link" href="#">Доставка</a>
+        </li>
+        <li class="footer-service-item">
+          <a class="footer-service-link" href="#">Гарантия</a>
+        </li>
+        <li class="footer-service-item">
+          <a class="footer-service-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <!-- TODO: Заменить на svg для оживления по стайлгайду -->
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.facebook.com/htmlacademy" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-service-container">
+      <span>Тел.: </span>
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru" target="_blank">
+        <!-- TODO: Заменить на svg для оживления по стайлгайду -->
+        <img src="" alt="">
+        <span class="visually-hidden">htmlacademy.ru</span>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
