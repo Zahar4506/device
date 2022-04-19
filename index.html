@@ -8,17 +8,16 @@
 <body>
 <header class="page-header page-container">
   <a class="logo" href="#">
-    <!-- TODO: Заменить на svg для оживления по стайлгайду -->
-    <img src="" alt="Логотип Device">
+    <img class="logo-header" src="./images/logo_black.svg" width="145" height="36" alt="Логотип Device">
   </a>
-  <section class="search">
+  <div class="search">
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="search-catalog-label visually-hidden" for="search-catalog">Поле поиска</label>
       <input class="search-catalog-field" type="search" id="search-catalog" name="appointment-date"
              placeholder="Текст поиска">
-      <button class="button search-button" type="submit">Найти</button>
+      <button class="search-button" type="submit">Найти</button>
     </form>
-  </section>
+  </div>
   <nav class="navigation">
     <div class="navigation-top">
       <ul class="navigation-list navigation-user">
@@ -94,7 +93,9 @@
     <ol class="slider">
       <li class="slider-item">
         <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
-        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-img-container">
+          <img class="slider-img" src="./images/main/slider_quadcopter.png" width="560"
+               height="560" alt="Квадрокоптер"></div>
         <div class="slider-description-container">
           <span class="slider-number">01</span>
           <b class="slider-title"></b>
@@ -115,7 +116,9 @@
       </li>
       <li class="slider-item">
         <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
-        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-img-container">
+          <img class="slider-img" src="./images/main/slider_fitness_bracelet.png"
+               width="560" height="560" alt="Фитнес браслет"></div>
         <div class="slider-description-container">
           <span class="slider-number">02</span>
           <b class="slider-title"></b>
@@ -136,7 +139,9 @@
       </li>
       <li class="slider-item">
         <!-- TODO: повесить "кнопки" на изображения через псевдоэлементы -->
-        <div class="slider-img-container"><img class="slider-img" src="" alt=""></div>
+        <div class="slider-img-container">
+          <img class="slider-img" src="./images/main/slider_monopod.png" width="560"
+               height="560" alt="Монопод"></div>
         <div class="slider-description-container">
           <span class="slider-number">03</span>
           <b class="slider-title"></b>
@@ -160,41 +165,40 @@
 
   <section class="page-container catalog-section">
     <h2 class="visually-hidden">Разделы каталога</h2>
-    <ul>
-      <li>
-        <!--TODO: прописать высоту img -->
+    <ul class="main-catalog-list">
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image"></span>
           <h3 class="catalog-card-title">Виртуальная реальность</h3>
         </a>
       </li>
-      <li>
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image monopod"></span>
           <h3 class="catalog-card-title">Моноподы для селфи</h3>
         </a>
       </li>
-      <li>
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image action-camera"></span>
           <h3 class="catalog-card-title">Экшн-камеры</h3>
         </a>
       </li>
-      <li>
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image fitness-bracelet"></span>
           <h3 class="catalog-card-title">Фитнес-браслеты</h3>
         </a>
       </li>
-      <li>
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image smartwatch"></span>
           <h3 class="catalog-card-title">Умные часы</h3>
         </a>
       </li>
-      <li>
+      <li class="main-catalog-item">
         <a class="catalog-card-link" href="#">
-          <img class="catalog-card-image" src="" alt="">
+          <span class="catalog-card-image quadcopters"></span>
           <h3 class="catalog-card-title">Квадрокоптеры</h3>
         </a>
       </li>

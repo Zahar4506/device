@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.page-header {
+  margin-top: 40px;
+  background-color: #ffe17f;
+  padding: 0 60px;
+}
+
+/*Логотип по стайлгайду*/
+.logo-header {
+  display: block;
+  margin-top: -23px;
+}
+
+.logo-header:hover {
+  opacity: 0.6;
+}
+
+.logo-header:active {
+  opacity: 0.3;
+}
+
+.logo:focus {
+  outline: 0;
+}
+
+.logo:focus .logo-header {
+  outline: 2px solid #AF4FFF;
+}
+
+.logo:active .logo-header {
+  outline: 0;
+}
+
+.search-form {
+  display: flex;
+  width: 517px;
+}
+
+.search-catalog-field {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  border-right: 0;
+  padding: 0;
+  padding-left: 48px;
+}
+
+input.search-catalog-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.search-button {
+  flex-shrink: 0;
+  background-color: transparent;
+  width: 160px;
+  border: 2px solid #000000;
+  border-radius: 0 20px 20px 0;
+}
+
+
+.services {
+  background: linear-gradient(to bottom, #ffffff 102px, #F0F0F0 0px, #F0F0F0);
+}
+
+.newsletter {
+  background-color: #F0F0F0;
+}
+
+.footer {
+  background-color: #444444;
+}
+
+
+.button {
+  text-align: center;
+  font-weight: 800;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  /*Анимация для кнопки*/
+  background: linear-gradient(to right, #FFE17F, #FFE17F),
+  linear-gradient(to right, #FFE17F, #FFE17F);
+  background-size: 100% 8px, 100% 8px;
+  background-position: 100% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms;
+}
+
+.button:hover {
+  background-size: 100% 8px, 100% 100%;
+}
+
+.button:focus {
+  background-size: 100% 8px, 100% 8px;
+  outline: 2px solid #AF4FFF;
+}
+
+.button:active {
+  background-size: 100% 8px, 100% 100%;
+  background-color: #FFCC33;
+  background: linear-gradient(to right, #FFCC33, #FFCC33),
+  linear-gradient(to right, #FFCC33, #FFCC33);
+  outline: 0;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
+
+
+.main-catalog-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-catalog-item {
+  width: 160px;
+}
+
+.catalog-card-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-card-link:hover .catalog-card-image {
+  background-color: #FFCC33;
+}
+
+.catalog-card-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.catalog-card-link:active {
+  outline: 0;
+  opacity: 0.3;
+}
+
+.catalog-card-title {
+  margin: 0;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 18px;
+}
+
+.catalog-card-image {
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  background-color: #FFE17F;
+  margin-bottom: 32px;
+}
+
+.catalog-card-image::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/main/category_vr.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.monopod.catalog-card-image::before {
+  background-image: url("../images/main/category_monopods.svg");
+}
+
+.action-camera.catalog-card-image::before {
+  background-image: url("../images/main/category_action_camera.svg");
+}
+
+.fitness-bracelet.catalog-card-image::before {
+  background-image: url("../images/main/category_fitness_bracelet.svg");
+}
+
+.smartwatch.catalog-card-image::before {
+  background-image: url("../images/main/category_smartwatch.svg");
+}
+
+.quadcopters.catalog-card-image::before {
+  background-image: url("../images/main/category_quadrocopters.svg");
+}
