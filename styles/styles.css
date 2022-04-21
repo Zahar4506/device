@@ -77,11 +77,11 @@ body {
   margin-top: -23px;
 }
 
-.logo-header:hover {
+.logo-img:hover {
   opacity: 0.6;
 }
 
-.logo-header:active {
+.logo-img:active {
   opacity: 0.3;
 }
 
@@ -89,11 +89,11 @@ body {
   outline: 0;
 }
 
-.logo:focus .logo-header {
+.logo:focus .logo-img {
   outline: 2px solid #AF4FFF;
 }
 
-.logo:active .logo-header {
+.logo:active .logo-img {
   outline: 0;
 }
 
@@ -133,8 +133,16 @@ input.search-catalog-field::placeholder {
   background: linear-gradient(to bottom, #ffffff 102px, #F0F0F0 0px, #F0F0F0);
 }
 
+.services .page-container {
+  background: transparent;
+}
+
 .newsletter {
   background-color: #F0F0F0;
+}
+
+.newsletter .page-container {
+  background: transparent;
 }
 
 .footer {
@@ -184,7 +192,7 @@ input.search-catalog-field::placeholder {
 
 
 .main-catalog-list {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -263,4 +271,183 @@ input.search-catalog-field::placeholder {
 
 .quadcopters.catalog-card-image::before {
   background-image: url("../images/main/category_quadrocopters.svg");
+}
+
+
+.about-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company-title {
+  margin: 0;
+  margin-bottom: 48px;
+  padding-top: 40px;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.about-company-title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/main/line.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 84px;
+  height: 7px;
+}
+
+
+.footer-container {
+  display: flex;
+  background: transparent;
+}
+
+
+.footer-service {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-developers-logo {
+  fill: #FFC700;
+}
+
+.htmlacademy-link:hover .footer-developers-logo {
+  fill: #FFFFFF;
+}
+
+.htmlacademy-link:focus .footer-developers-logo {
+  fill: #FFC700;
+  outline: 2px solid #AF4FFF;
+}
+
+.htmlacademy-link:active .footer-developers-logo {
+  fill: #FFFFFF;
+  opacity: 0.3;
+  outline: 0;
+}
+
+.newsletter-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  width: 348px;
+  margin: 0;
+}
+
+.newsletter-text {
+  margin: 0;
+  width: 560px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 810px;
+}
+
+.email-field {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 3px solid #CECECE;
+  border-top: 0;
+  border-right: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+
+input.email-field::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.button-email {
+  flex-shrink: 0;
+  background-color: transparent;
+  width: 253px;
+  border: 3px solid #CECECE;
+  padding: 18px 39px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.email-text {
+  line-height: 30px;
+  color: #444444;
+  position: relative;
+  margin: 0;
+}
+
+.email-text:before {
+  position: absolute;
+  content: '';
+  left: -30px;
+  top: 7px;
+  background-image: url("../images/icons/tick-big.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+}
+
+.delivery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.delivery-item {
+  padding: 0;
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 19px;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+}
+
+.delivery-item:before {
+  position: absolute;
+  content: '';
+  top: 6px;
+  left: 0px;
+  background-color: #FFC700;
+  width: 8px;
+  height: 8px;
+  mask-image: url("../images/icons/ellipse.svg");
+  -webkit-mask-image: url("../images/icons/ellipse.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
